@@ -1,0 +1,11 @@
+:root{color:#20262d;background:#edf0f2}
+.top{background:#66737f}
+.tab.active,.sheet-action{background:#5f6a73}
+.review-block{background:#e8ebed}
+.event-card,.lane-card,.feed-row{box-shadow:none;border-color:#cfd5d9}
+.event-band{background:#dce1e4}
+.event-still,.detail-preview>img{filter:grayscale(1);opacity:.75}
+.badge.high,.badge.medium{background:#e1e5e7;color:#48535b}
+.lane-still{background:#d7dde1}
+.nav-item.selected,.view-all,.filter-chip.active,.clear-filters{color:#405466}
+.filter-chip.active{border-color:#8393a0;background:#e8ecef}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#26477c" />
+  <title>Geotab Video · Events</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./wireframe.css" />
+  <script defer src="./main.js"></script>
+</head>
+<body>
+  <div class="phone" aria-label="Geotab Video events prototype">
+    <header class="top">
+      <div class="status-bar" aria-hidden="true">
+        <span class="clock">9:41</span>
+        <span class="system-icons">
+          <img src="../../high-fidelity/home/assets/imgCombinedShape.svg" alt="" />
+          <img src="../../high-fidelity/home/assets/imgCombinedShape1.svg" alt="" />
+          <img src="../../high-fidelity/home/assets/imgBatteryIcon.svg" alt="" />
+        </span>
+      </div>
+      <div class="top-title"><h1>Today</h1><time datetime="2026-10-21">Wed, 21 Oct</time></div>
+    </header>
+
+    <main class="content" id="events-content">
+      <div class="tabs" role="tablist" aria-label="Today views">
+        <a class="tab" role="tab" aria-selected="false" href="../home/index.html">Actions</a>
+        <button class="tab active" role="tab" aria-selected="true" type="button">Events</button>
+      </div>
+
+      <section class="review-block" id="priority-section" aria-labelledby="review-title">
+        <h2 id="review-title">Needs review</h2>
+        <div id="priority-list"></div>
+      </section>
+
+      <section class="feed-section" aria-label="Events feed">
+        <div class="feed-header" id="overview-header">
+          <div><h2 id="feed-title">Recent events</h2><span class="feed-count" id="overview-count">247 events today</span></div>
+          <button type="button" class="view-all" id="view-all">View all</button>
+        </div>
+        <div class="feed-header all-header" id="all-header" hidden>
+          <button type="button" class="back-button" id="back-to-overview" aria-label="Back to events overview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7"/></svg></button>
+          <div><h2>All events</h2><span class="feed-count" id="all-count">247 today</span></div>
+        </div>
+
+        <div id="preview-view">
+          <div class="event-lane" id="preview-list" aria-label="Recent events"></div>
+        </div>
+
+        <div id="all-view" hidden>
+          <div class="filter-area">
+            <div class="filter-controls" aria-label="Filter events">
+              <button type="button" class="filter-chip" id="driver-filter" aria-haspopup="dialog"><span>Driver: All</span><span class="filter-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3.5 6 4.5 4.5L12.5 6"/></svg></span></button>
+              <button type="button" class="filter-chip" id="behavior-filter" aria-haspopup="dialog"><span>Behavior: All</span><span class="filter-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3.5 6 4.5 4.5L12.5 6"/></svg></span></button>
+            </div>
+            <button class="clear-filters" id="clear-filters" type="button" hidden>Clear filters</button>
+          </div>
+          <div class="feed-list" id="all-list"></div>
+          <button class="load-more" id="load-more" type="button">Load more</button>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No events match these filters.</p>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <a class="nav-item selected" href="../home/index.html" aria-label="Home"><img src="../../high-fidelity/home/assets/imgGroup.svg" alt="" /><span>Home</span></a>
+      <a class="nav-item" href="../fleet/index.html"><img src="../../high-fidelity/home/assets/imgTruck.svg" alt="" /><span>Fleet</span></a>
+      <button class="nav-item" type="button" data-info="Profile"><img src="../../high-fidelity/home/assets/imgImage.png" alt="" /><span>Profile</span></button>
+    </nav>
+    <div class="home-indicator" aria-hidden="true"></div>
+
+    <div class="dialog-scrim" id="scrim" hidden></div>
+    <section class="detail-sheet" id="detail" role="dialog" aria-modal="true" aria-labelledby="detail-title" hidden>
+      <button class="sheet-close" id="close-detail" type="button" aria-label="Close event details"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg></button>
+      <div id="detail-body"></div>
+    </section>
+    <section class="filter-sheet" id="filter-sheet" role="dialog" aria-modal="true" aria-labelledby="filter-title" hidden>
+      <button class="sheet-close" id="close-filter" type="button" aria-label="Close filter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg></button>
+      <h2 id="filter-title"></h2>
+      <div class="filter-options" id="filter-options" role="radiogroup"></div>
+      <button class="sheet-action" id="apply-filter" type="button"></button>
+    </section>
+  </div>
+</body>
+</html>

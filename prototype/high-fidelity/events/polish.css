@@ -1,0 +1,11 @@
+.review-block{border-radius:19px;background:#f3f5f7}
+.review-block h2{font-size:19px;font-weight:650}
+.feed-header h2{font-size:23px;font-weight:600}
+.lane-card,.feed-row{border-color:#e2e8ed;box-shadow:0 3px 8px #1531500c}
+.lane-still{background:#eaf0f5}
+.lane-still img{opacity:.65}
+.lane-copy strong,.feed-row-copy strong{font-weight:600}
+.feed-thumb.placeholder{background:#edf2f6}
+.filter-chip{border-color:#dce5ec;border-radius:10px}
+.filter-option.selected{background:#eaf1f8}
+.nav-item{text-decoration:none}

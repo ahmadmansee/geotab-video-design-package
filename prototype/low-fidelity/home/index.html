@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#26477c" />
+    <title>Geotab Video · Home</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <div class="phone" aria-label="Geotab Video home prototype">
+      <header class="top">
+        <div class="status-bar" aria-hidden="true">
+          <span class="clock">9:41</span>
+          <span class="system-icons">
+            <img src="../../high-fidelity/home/assets/imgCombinedShape.svg" alt="" />
+            <img src="../../high-fidelity/home/assets/imgCombinedShape1.svg" alt="" />
+            <img src="../../high-fidelity/home/assets/imgBatteryIcon.svg" alt="" />
+          </span>
+        </div>
+        <div class="top-title"><h1>Today</h1><time datetime="2026-10-21">Wed, 21 Oct</time></div>
+      </header>
+
+      <main class="content" id="home-content">
+        <div class="tabs" role="tablist" aria-label="Today views">
+          <button class="tab active" role="tab" aria-selected="true" type="button">Actions</button>
+          <a class="tab" role="tab" aria-selected="false" href="../events/index.html">Events</a>
+        </div>
+
+        <section class="events" aria-label="Events needing review">
+          <article class="event-card feature" tabindex="0" role="button" data-event="close-following-elliot" aria-label="Close Following, Elliot Brooks, high priority">
+            <div class="event-band"></div>
+            <img class="event-still" src="../../high-fidelity/home/assets/imgImage5283.png" alt="Still from Elliot Brooks event" />
+            <div class="card-controls">
+              <button class="circle-button play" type="button" aria-label="Open Elliot Brooks event"><img src="../../high-fidelity/home/assets/imgPlay.svg" alt="" /></button>
+              <button class="circle-button more" type="button" aria-label="More options for Elliot Brooks event"><img src="../../high-fidelity/home/assets/imgEllipsis.svg" alt="" /></button>
+            </div>
+            <div class="feature-copy">
+              <div><h2>Close Following</h2><p>Elliot Brooks · Vehicle V-112</p></div>
+              <span class="badge high">High priority</span>
+            </div>
+          </article>
+
+          <div class="event-pair">
+            <article class="event-card compact" tabindex="0" role="button" data-event="phone-use-nina" aria-label="Phone Use, Nina Torres, medium priority">
+              <div class="event-band"></div>
+              <img class="event-still" src="../../high-fidelity/home/assets/imgImage5284.png" alt="Still from Nina Torres event" />
+              <div class="card-controls">
+                <button class="circle-button more" type="button" aria-label="More options for Nina Torres event"><img src="../../high-fidelity/home/assets/imgEllipsis.svg" alt="" /></button>
+                <button class="circle-button play" type="button" aria-label="Open Nina Torres event"><img src="../../high-fidelity/home/assets/imgPlay.svg" alt="" /></button>
+              </div>
+              <div class="compact-copy"><span class="badge medium">Medium priority</span><h2>Phone Use</h2><p>Nina Torres · V-204</p></div>
+            </article>
+            <article class="event-card compact" tabindex="0" role="button" data-event="close-following-marco" aria-label="Close Following, Marco Silva, medium priority">
+              <div class="event-band"></div>
+              <img class="event-still" src="../../high-fidelity/home/assets/imgImage5285.png" alt="Still from Marco Silva event" />
+              <div class="card-controls">
+                <button class="circle-button more" type="button" aria-label="More options for Marco Silva event"><img src="../../high-fidelity/home/assets/imgEllipsis.svg" alt="" /></button>
+                <button class="circle-button play" type="button" aria-label="Open Marco Silva event"><img src="../../high-fidelity/home/assets/imgPlay.svg" alt="" /></button>
+              </div>
+              <div class="compact-copy"><span class="badge medium">Medium priority</span><h2>Close Following</h2><p>Marco Silva · Vehicle V-318</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="camera-section" aria-labelledby="camera-heading">
+          <div class="section-head"><h2 id="camera-heading">Camera Status</h2><a class="text-button" href="../fleet/index.html">See all</a></div>
+          <div class="camera-list">
+            <a class="camera-card" href="../fleet/index.html?vehicle=V-219">
+              <span class="camera-icon"><img src="../../high-fidelity/home/assets/imgTruck1.svg" alt="" /></span>
+              <span class="camera-copy"><strong>Vehicle V-219</strong><small>Ahmad Mansee · Last Connected At 8:14 AM</small></span>
+              <span class="badge offline">Offline</span>
+              <img class="chevron" src="../../high-fidelity/home/assets/imgChevronRight.svg" alt="" />
+            </a>
+            <a class="camera-card" href="../fleet/index.html?vehicle=V-2124">
+              <span class="camera-icon"><img src="../../high-fidelity/home/assets/imgTruck1.svg" alt="" /></span>
+              <span class="camera-copy"><strong>Vehicle V-2124</strong><small>Rami Massad · Last Connected At 12:00 AM</small></span>
+              <span class="badge offline">Offline</span>
+              <img class="chevron" src="../../high-fidelity/home/assets/imgChevronRight.svg" alt="" />
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Main navigation">
+        <button type="button" class="nav-item selected" aria-current="page"><img src="../../high-fidelity/home/assets/imgGroup.svg" alt="" /><span>Home</span></button>
+        <a class="nav-item" href="../fleet/index.html"><img src="../../high-fidelity/home/assets/imgTruck.svg" alt="" /><span>Fleet</span></a>
+        <button type="button" class="nav-item" data-info="Profile"><img src="../../high-fidelity/home/assets/imgImage.png" alt="" /><span>Profile</span></button>
+      </nav>
+      <div class="home-indicator" aria-hidden="true"></div>
+
+      <div class="dialog-scrim" hidden></div>
+      <section class="detail-sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+        <button class="sheet-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg></button>
+        <div id="sheet-body"></div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+@import url("../../high-fidelity/home/styles.css");
+:root{color:#20262d;background:#edf0f2}
+.top{background:#66737f}
+.tab.active{background:#5f6a73}
+.event-card,.camera-card{box-shadow:none;border-color:#cfd5d9}
+.event-band{background:#dfe3e6}
+.event-still{filter:grayscale(1);opacity:.7}
+.circle-button{box-shadow:none;border:1px solid #d9dfe3}
+.badge.high,.badge.offline{background:#e0e3e5;color:#3c4850}
+.badge.medium{background:#e9ebed;color:#48535a}
+.camera-icon{background:#e1e5e7}
+.nav-item.selected{color:#3d4d5b}
+.detail-sheet .sheet-action{background:#536676}
+.camera-card,.text-button,.bottom-nav a{text-decoration:none}
+.phone img{filter:grayscale(1)}

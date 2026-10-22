@@ -1,0 +1,10 @@
+:root{background:#edf0f2}
+.top{background:#66737f}
+.tab.active{background:#5f6a73}
+.attention-group,.driver-overview-card{background:#e8ebed}
+.attention-card,.entity-row,.camera-overview,.detail-entry{box-shadow:none;border-color:#cfd5d9}
+.card-band,.camera-preview{background:#dce1e4}
+.card-emblem{background:#d5dade}
+.vehicle-status,.vehicle-status.offline,.card-badge,.trend-tag{background:#e1e5e7;color:#48535b}
+.bottom-nav .nav-item.selected{color:#405466}
+.phone img{filter:grayscale(1)}

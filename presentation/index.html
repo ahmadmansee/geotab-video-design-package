@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Geotab Video — Design assessment</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js?v=3"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#introduction" aria-label="Go to introduction">
+        <img src="assets/geotab-logo.png" alt="Geotab" width="500" height="300" />
+      </a>
+    </header>
+
+    <main id="slides">
+      <section class="slide slide-cover" id="introduction" aria-labelledby="cover-title">
+        <div class="cover-content">
+          <div class="cover-main">
+            <h1 id="cover-title">Geotab<br />Video</h1>
+            <p class="cover-subtitle">A mobile app for fleet safety managers to monitor vehicles and cameras, review risky driving events, and coach drivers.</p>
+            <p class="presenter"><strong>Ahmad Mansee</strong><span>Product Designer · October 2026</span></p>
+          </div>
+          <div class="portrait-frame">
+            <img src="assets/ahmad-portrait.png" alt="Portrait of Ahmad Mansee" width="800" height="800" />
+          </div>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">01 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-index" id="contents" aria-labelledby="contents-title">
+        <div class="index-content">
+          <div class="index-heading">
+            <h2 id="contents-title">What we’ll<br />cover.</h2>
+          </div>
+          <ol class="index-list" aria-label="Presentation sections">
+            <li><span>01</span><strong>The problem</strong></li>
+            <li><span>02</span><strong>Benchmarks</strong></li>
+            <li><span>03</span><strong>Design exploration</strong></li>
+            <li><span>04</span><strong>My workflow</strong></li>
+            <li><span>05</span><strong>Final mobile design</strong></li>
+            <li><span>06</span><strong>Learnings</strong></li>
+          </ol>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">02 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-problem" id="problem" aria-labelledby="problem-title">
+        <div class="problem-content">
+          <h2 id="problem-title">The problem</h2>
+          <div class="problem-body">
+            <div class="problem-lead">
+              <p class="problem-statement">A busy fleet safety manager needs to see what needs attention at a glance.</p>
+              <p class="problem-question">Is my fleet safe right now, and who should I worry about?</p>
+            </div>
+            <div class="problem-challenges" aria-label="What makes this difficult">
+              <p>Hundreds of events arrive each day. Only a few need review.</p>
+              <p>Managers may check in between other tasks, away from a desk.</p>
+              <p>Camera images and video may load slowly on a weak connection.</p>
+              <a href="assets/one-page-prd.pdf" target="_blank" rel="noopener noreferrer">Read the one-page PRD <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">03 / 15</span></footer>
+      </section>
+      <section class="slide slide-section-intro" id="benchmarks" aria-labelledby="benchmarks-title">
+        <div class="section-intro-content">
+          <div class="section-intro-row">
+            <h2 id="benchmarks-title">Benchmarks</h2>
+            <div class="section-intro-copy">
+              <p>We looked at Motive and Samsara’s mobile screens for fleet status, events, cameras, and drivers.</p>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">04 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-benchmark" id="benchmark-fleet" aria-labelledby="benchmark-fleet-title">
+        <div class="benchmark-content">
+          <header class="benchmark-heading">
+            <h2 id="benchmark-fleet-title">Fleet and cameras</h2>
+          </header>
+          <div class="benchmark-grid">
+            <div class="benchmark-gallery three">
+              <figure><a href="benchmark/assets/motive-fleet-map.png" target="_blank" rel="noopener noreferrer"><img src="benchmark/assets/motive-fleet-map.png" alt="Motive Fleet View with a large map and a searchable vehicle list" /></a><figcaption><span class="benchmark-image-number">01</span>Motive · Fleet View</figcaption></figure>
+              <figure><a href="benchmark/assets/motive-camera-live.png" target="_blank" rel="noopener noreferrer"><img src="benchmark/assets/motive-camera-live.png" alt="Motive road and cabin still images marked ten minutes old" /></a><figcaption><span class="benchmark-image-number">02</span>Motive · Camera images</figcaption></figure>
+              <figure><a href="benchmark/assets/samsara-show-vehicle.webp" target="_blank" rel="noopener noreferrer"><img src="benchmark/assets/samsara-show-vehicle.webp" alt="Samsara map and vehicle sheet with speed, driver, address, and diagnostics" /></a><figcaption><span class="benchmark-image-number">03</span>Samsara · Vehicle detail</figcaption></figure>
+            </div>
+            <ul class="benchmark-observations">
+              <li><span class="benchmark-ref">01</span><span>Rounded cards give the page breathing room, though the map takes most of the screen.</span></li>
+              <li><span class="benchmark-ref">01</span><span>Safety is one tap away in the bottom bar. The tab gives no clue whether anything needs attention.</span></li>
+              <li><span class="benchmark-ref">02</span><span>The images show when they were taken. Refresh requests a newer image.</span></li>
+              <li><span class="benchmark-ref">03</span><span>Spacing and simple icons make the vehicle details easy to scan.</span></li>
+            </ul>
+          </div>
+        </div>
+        <footer class="slide-footer"><a class="benchmark-source" href="benchmark/product-flow-v2.html" target="_blank" rel="noopener noreferrer">Full benchmark <span aria-hidden="true">↗</span></a><span class="slide-count">05 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-benchmark" id="benchmark-events" aria-labelledby="benchmark-events-title">
+        <div class="benchmark-content">
+          <header class="benchmark-heading">
+            <h2 id="benchmark-events-title">Event review</h2>
+          </header>
+          <div class="benchmark-grid">
+            <div class="benchmark-gallery three">
+              <figure><a href="benchmark/assets/motive-events-list.png" target="_blank" rel="noopener noreferrer"><img src="benchmark/assets/motive-events-list.png" alt="Motive Safety preview with event types and drivers but no severity labels" /></a><figcaption><span class="benchmark-image-number">01</span>Motive · Safety preview</figcaption></figure>
+              <figure><a href="benchmark/assets/motive-events-severity.png" target="_blank" rel="noopener noreferrer"><img src="benchmark/assets/motive-events-severity.png" alt="Motive full event list with risk labels and open severity filter" /></a><figcaption><span class="benchmark-image-number">02</span>Motive · Events list</figcaption></figure>
+              <figure><a href="benchmark/assets/samsara-appstore-6.jpg" target="_blank" rel="noopener noreferrer"><img src="benchmark/assets/samsara-appstore-6.jpg" alt="Samsara Safety Inbox with a Needs Review tab and compact event rows" /></a><figcaption><span class="benchmark-image-number">03</span>Samsara · Safety Inbox</figcaption></figure>
+            </div>
+            <ul class="benchmark-observations">
+              <li><span class="benchmark-ref">01</span><span>Thumbnails show what happened, but urgency is missing. “View all” sits far down the Safety page.</span></li>
+              <li><span class="benchmark-ref">02</span><span>Filters are easy to find. The small orange risk label sits just above the thumbnail, where it may be missed.</span></li>
+              <li><span class="benchmark-ref">03</span><span>“Needs Review” is clear and the list is clean. Small colored dots make urgency harder to judge.</span></li>
+            </ul>
+          </div>
+        </div>
+        <footer class="slide-footer"><a class="benchmark-source" href="benchmark/product-flow-v2.html" target="_blank" rel="noopener noreferrer">Full benchmark <span aria-hidden="true">↗</span></a><span class="slide-count">06 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-benchmark" id="benchmark-drivers" aria-labelledby="benchmark-drivers-title">
+        <div class="benchmark-content">
+          <header class="benchmark-heading">
+            <h2 id="benchmark-drivers-title">Driver information</h2>
+          </header>
+          <div class="benchmark-grid">
+            <div class="benchmark-gallery two">
+              <figure><a href="benchmark/assets/motive-driver-detail.png" target="_blank" rel="noopener noreferrer"><img src="benchmark/assets/motive-driver-detail.png" alt="Top of Motive driver detail with identity, vehicle, location, and duty status" /></a><figcaption><span class="benchmark-image-number">01</span>Motive · Driver detail, top</figcaption></figure>
+              <figure><a href="benchmark/assets/motive-driver-score.png" target="_blank" rel="noopener noreferrer"><img src="benchmark/assets/motive-driver-score.png" alt="Lower part of the same Motive driver detail with safety score, change, and events to review" /></a><figcaption><span class="benchmark-image-number">02</span>Motive · Same page, lower down</figcaption></figure>
+            </div>
+            <ul class="benchmark-observations">
+              <li><span class="benchmark-ref">01</span><span>Cards separate the driver, vehicle, location, and duty details. The page is long.</span></li>
+              <li><span class="benchmark-ref">02</span><span>The safety score comes after those details, so a manager must scroll to find it.</span></li>
+              <li><span class="benchmark-ref">02</span><span>“56,” “down 3,” and “11 events to review” are clear once visible. A longer trend is not shown here.</span></li>
+            </ul>
+          </div>
+        </div>
+        <footer class="slide-footer"><a class="benchmark-source" href="benchmark/product-flow-v2.html" target="_blank" rel="noopener noreferrer">Full benchmark <span aria-hidden="true">↗</span></a><span class="slide-count">07 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-section-intro" id="design-exploration" aria-labelledby="design-exploration-title">
+        <div class="section-intro-content">
+          <div class="section-intro-row">
+            <h2 id="design-exploration-title">Design<br />exploration</h2>
+            <div class="section-intro-copy">
+              <p>I began by defining what each area needed to help the manager do.</p>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">08 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-areas" id="area-purpose" aria-labelledby="area-purpose-title">
+        <div class="area-a-content">
+          <h2 id="area-purpose-title">What each area needs to show</h2>
+          <div class="area-a-grid">
+            <div class="area-a-item">
+              <div class="area-a-icon"><img src="assets/icons/layout-dashboard.svg" alt="" /></div>
+              <h3>Home</h3>
+              <p>Fleet status, risky drivers, and action needed — at a glance.</p>
+              <span>Explore what appears first.</span>
+            </div>
+            <div class="area-a-item">
+              <div class="area-a-icon"><img src="assets/icons/camera.svg" alt="" /></div>
+              <h3>Cameras</h3>
+              <p>Find a vehicle, check its camera and location, then request live video.</p>
+              <span>Explore video on weak connections.</span>
+            </div>
+            <div class="area-a-item">
+              <div class="area-a-icon"><img src="assets/icons/list-filter.svg" alt="" /></div>
+              <h3>Events</h3>
+              <p>Filter hundreds of events by driver and behavior; open the clips that matter.</p>
+              <span>Explore what earns a closer look.</span>
+            </div>
+            <div class="area-a-item">
+              <div class="area-a-icon"><img src="assets/icons/user-round.svg" alt="" /></div>
+              <h3>Drivers</h3>
+              <p>See each driver’s score, trend, and repeated behaviors.</p>
+              <span>Explore how progress or risk stands out.</span>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">09 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-principles" id="design-principles" aria-labelledby="principles-title">
+        <div class="principles-content">
+          <h2 id="principles-title">Design<br />principles</h2>
+          <ol class="principles-grid">
+            <li><span class="principle-number">01</span><div><h3>Proximity</h3><p>Keep related details and actions together.</p></div></li>
+            <li><span class="principle-number">02</span><div><h3>Hierarchy</h3><p>Use position, size, and labels to make urgency clear.</p></div></li>
+            <li><span class="principle-number">03</span><div><h3>Consistency</h3><p>Keep labels, imagery, and interactions consistent across pages.</p></div></li>
+            <li><span class="principle-number">04</span><div><h3>Load on request</h3><p>Let the manager choose when video or map data loads.</p></div></li>
+          </ol>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">10 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-section-intro" id="my-workflow" aria-labelledby="my-workflow-title">
+        <div class="section-intro-content">
+          <div class="section-intro-row">
+            <h2 id="my-workflow-title">My<br />workflow</h2>
+            <div class="section-intro-copy">
+              <p>The work moved between writing, AI exploration, Figma, and a coded prototype.</p>
+            </div>
+          </div>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">11 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-workflow" id="workflow-map" aria-labelledby="workflow-map-title">
+        <div class="workflow-content">
+          <h2 id="workflow-map-title">From brief to screens</h2>
+          <div class="workflow-track" role="group" aria-label="Workflow stages">
+            <button class="workflow-step is-active" type="button" data-workflow-step="0" aria-pressed="true"><span class="workflow-marker">01</span><strong>Frame</strong><small>Brief → working docs</small></button>
+            <button class="workflow-step" type="button" data-workflow-step="1" aria-pressed="false"><span class="workflow-marker">02</span><strong>Test ideas</strong><small>GPT home trials</small></button>
+            <button class="workflow-step" type="button" data-workflow-step="2" aria-pressed="false"><span class="workflow-marker">03</span><strong>Design</strong><small>Home in Figma</small></button>
+            <button class="workflow-step" type="button" data-workflow-step="3" aria-pressed="false"><span class="workflow-marker">04</span><strong>Build</strong><small>HTML → other pages</small></button>
+          </div>
+          <div class="workflow-detail" aria-live="polite">
+            <div class="workflow-detail-copy"><span id="workflow-detail-number">01 / 04</span><h3 id="workflow-detail-title">Frame the task</h3><p id="workflow-detail-text">I read the brief, then used GPT to draft and revise the PRD, design brief, and working notes before sketching.</p></div>
+            <div class="workflow-artifacts"><span>TOOLS &amp; OUTPUTS</span><div id="workflow-detail-artifacts"><span>Brief</span><span>GPT</span><span>PRD</span><span>Design brief</span></div></div>
+          </div>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">12 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-final-screens" id="final-screens" aria-labelledby="final-screens-title">
+        <div class="final-screens-content">
+          <div class="final-screens-heading"><h2 id="final-screens-title">Final mobile design</h2><a href="../prototype/high-fidelity/home/index.html" target="_blank" rel="noopener noreferrer">Open high-fidelity prototype ↗</a></div>
+          <div class="screen-showcase" aria-label="Three final mobile screens">
+            <figure class="showcase-screen"><img src="assets/showcase-actions.png" alt="Actions screen showing three priority events and camera status" /><figcaption>Actions</figcaption></figure>
+            <figure class="showcase-screen"><img src="assets/showcase-driver-detail.png" alt="Driver profile showing Elliot Brooks, his safety score, known behaviors, and safety trend" /><figcaption>Driver profile</figcaption></figure>
+            <figure class="showcase-screen"><img src="assets/showcase-vehicle-detail.png" alt="Vehicle detail screen showing camera health and live video on request" /><figcaption>Vehicle detail</figcaption></figure>
+          </div>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">13 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-learnings" id="learnings" aria-labelledby="learnings-title">
+        <div class="learnings-content">
+          <h2 id="learnings-title">Learnings</h2>
+          <div class="learnings-list">
+            <p><span>01</span>There is no single workflow for using AI in design exploration.</p>
+            <p><span>02</span>Experiment, then move between tools as the work demands.</p>
+            <p><span>03</span>These designs are based on my assumptions. Without access to data or user research, they need testing.</p>
+          </div>
+          <p class="learnings-next">Next: validate the priorities and decisions with fleet safety managers.</p>
+        </div>
+        <footer class="slide-footer"><span class="slide-count">14 / 15</span></footer>
+      </section>
+
+      <section class="slide slide-thanks" id="thank-you" aria-labelledby="thanks-title">
+        <div class="thanks-content"><h2 id="thanks-title">Thank you.</h2><div class="thanks-links"><a href="../Product-PRD.pdf" target="_blank" rel="noopener noreferrer">Read the PRD ↗</a><a href="../prototype/low-fidelity/home/index.html" target="_blank" rel="noopener noreferrer">Low-fidelity prototype ↗</a><a href="../prototype/high-fidelity/home/index.html" target="_blank" rel="noopener noreferrer">High-fidelity prototype ↗</a></div></div>
+        <footer class="slide-footer"><span class="slide-count">15 / 15</span></footer>
+      </section>
+
+    </main>
+
+    <nav class="deck-nav" aria-label="Slide controls" hidden>
+      <button type="button" id="previous-slide" aria-label="Previous slide">↑</button>
+      <span id="nav-position" aria-live="polite">01 / 15</span>
+      <button type="button" id="next-slide" aria-label="Next slide">↓</button>
+    </nav>
+  </body>
+</html>
